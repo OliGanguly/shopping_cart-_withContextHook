@@ -1,4 +1,5 @@
 {
+  "homepage": "http://OliGanguly.github.io/shopping_cart-_withContextHook",
   "name": "shopping-cart-withcontextapi",
   "version": "0.1.0",
   "private": true,
@@ -17,6 +18,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -41,9 +44,10 @@
   },
   "devDependencies": {
     "@faker-js/faker": "^7.6.0",
-    "faker": "^5.5.3"
+    "faker": "^5.5.3",
+    "gh-pages": "^5.0.0"
   },
   "overrides": {
     "autoprefixer": "10.4.5"
-}
+  }
 }
